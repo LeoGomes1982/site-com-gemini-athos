@@ -54,3 +54,59 @@
     border-left-color: var(--accent-color);
     font-weight: bold; /* Deixa o texto mais evidente */
 }
+/* Estilos para as Seções e Subseções Injetadas pelo JS */
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 280px é o tamanho mínimo do card */
+    gap: 25px; /* Espaçamento entre os cartões */
+    margin-top: 30px;
+}
+
+.section-card {
+    background-color: var(--primary-bg); /* Cor de fundo do card */
+    border: 1px solid var(--border-color);
+    border-radius: 12px; /* Cantos mais arredondados */
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombra mais suave */
+}
+
+.section-card:hover {
+    transform: translateY(-5px); /* Efeito "flutuar" no hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    background-color: var(--hover-bg); /* Muda a cor de fundo */
+}
+
+.section-card .icon-card {
+    font-size: 3em; /* Ícones grandes nos cards */
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.section-card h3 {
+    margin-top: 0;
+    font-size: 1.4em; /* Título do card maior */
+    color: var(--text-color);
+}
+
+.section-card p {
+    font-size: 1em; /* Texto do card */
+    color: var(--light-text-color);
+    margin-bottom: 0;
+}
+
+.icon-title {
+    font-size: 1.5em; /* Ícone ao lado do título da seção */
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+/* Estilo para o item de navegação ativo */
+.nav-item.active {
+    background-color: var(--hover-bg);
+    color: var(--accent-color);
+    border-left-color: var(--accent-color);
+    font-weight: bold; /* Deixa o texto mais evidente */
+}
